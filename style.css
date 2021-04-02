@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato/Lato-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.container {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 400px;
+}
+
+.header .nav {
+  margin: 30px 30px 0 30px;
+}
+.header .nav__logo {
+  width: 200px;
+  display: block;
+  float: left;
+}
+.header .nav .menu {
+  display: block;
+  float: right;
+  padding-right: 15px;
+}
+.header .nav .menu__blog {
+  border-bottom: solid 3px #56C8E1;
+  padding-bottom: 7px;
+}
+.header .nav .menu a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-top: 15px;
+  margin-left: 20px;
+  word-spacing: 15px;
+  font-weight: bold;
+  text-align: right;
+}
+.header .nav .menu a:hover {
+  border-bottom: solid 3px #56C8E1;
+  padding-bottom: 7px;
+}
+
+.timeline {
+  padding: 30px 0 0 0;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 10px 40px;
+  font-size: 18px;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.button_btn-security {
+  background: #E1A956;
+}
+.button_btn-advice {
+  background-color: #56E19E;
+}
+.button_btn-devops {
+  background-color: #56C8E1;
+}
+.button_btn-interview {
+  background-color: #616875;
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+  max-width: 1440px;
+  width: 100%;
+}
+.content .block {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  z-index: 1;
+  max-width: 1440px;
+  width: 100%;
+}
+.content .block_block-devops {
+  margin-top: 60px;
+}
+.content .block .block-cover {
+  display: flex;
+  align-items: flex-end;
+  height: 817px;
+  max-width: 1200px;
+  width: 100%;
+}
+.content .block .block-cover_security {
+  background: url("img/block/security.jpg") no-repeat;
+}
+.content .block .block-cover_advice {
+  background: url("img/block/advice.jpg") no-repeat;
+}
+.content .block .block-cover_devops {
+  background: url("img/block/devops.jpg") no-repeat;
+}
+.content .block .block-cover_interview {
+  flex-direction: column;
+}
+.content .block .block-cover__img-interview {
+  width: 1200px;
+}
+.content .block .block-cover__preview {
+  display: flex;
+  height: 300px;
+  max-width: 1200px;
+  opacity: 0.95;
+  margin: 0 auto;
+  z-index: 2;
+  width: 100%;
+  color: white;
+  flex-direction: column;
+}
+.content .block .block-cover__preview_security-info {
+  background-color: #42240C;
+}
+.content .block .block-cover__preview_advice-info {
+  background-color: #004445;
+}
+.content .block .block-cover__preview_devops-info {
+  background-color: #151965;
+}
+.content .block .block-cover__preview_interview-info {
+  background-color: #1B262C;
+}
+.content .block .block-cover__preview_devops-preview {
+  align-self: center;
+}
+.content .block .block-cover__title {
+  display: flex;
+  justify-content: center;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 50px;
+  width: 100%;
+}
+.content .block .block-cover__title_title-detail {
+  height: 33px;
+}
+.content .block .block-cover__title_title-interview {
+  height: 66px;
+  text-align: center;
+}
+.content .block .block-cover__title_title-devops {
+  font-size: 36px;
+  line-height: 45px;
+  margin: 105px 211px;
+  width: 778px;
+  height: 90px;
+  text-align: center;
+}
+.content .block .block-cover__subtitle {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+.content .block .block-cover__subtitle_subtitle-detail {
+  height: 38px;
+  margin: 30px 30px 52px 30px;
+  text-align: center;
+}
+.content .block .block-cover__subtitle_subtitle-interview {
+  height: 19px;
+  margin: 30px 50px 38px 50px;
+  text-align: center;
+}
+.content .block .block-description {
+  display: flex;
+  flex-direction: column;
+  height: 817px;
+  max-width: 1200px;
+  width: 100%;
+  font-family: Lato;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  line-height: 150%;
+}
+.content .block .block-description__advantage h1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0 30px 0;
+  font-size: 24px;
+}
+.content .block .block-description__advantage h2 {
+  margin: 24px 0 10px 0;
+  font-size: 18px;
+}
+.content .block .block-description__advantage p {
+  text-align: left;
+  font-size: 18px;
+  line-height: 150%;
+}
+.content .block .block-description__advantage pre {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: left;
+  line-height: 150%;
+}
+.content .block .block-description__comment h1 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 30px;
+}
+.content .block .block-description__authors-comment {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  color: #CDCDCD;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: bold;
+}
+.content .block .block-description__contact {
+  font-weight: bold;
+  display: flex;
+  margin-top: 119px;
+  flex-direction: column;
+  font-size: 24px;
+  line-height: 29px;
+}
+.content .block .block-description__title {
+  display: flex;
+  justify-content: center;
+}
+.content .block .block-description__btn {
+  display: flex;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  left: 5%;
+  right: 5%;
+  margin: 30px 0 100px 0;
+  justify-content: center;
+}
+.content .block .block-description__btn-contact {
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+}
+.content .block .block-description__btn-contact_btn-vk {
+  padding: 0;
+}
+.content .block .block-description__btn-contact_btn-fb {
+  padding: 0;
+  margin-left: 25px;
+}
+.content .block .block-description__btn-contact_btn-inst {
+  padding: 0;
+  margin-left: 25px;
+}
+.content .block .block-description__btn-contact::-moz-focus-inner {
+  border: 0;
+}
+.content .block .authors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content .block .authors__info {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+.content .block .authors__devops-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.content .block .authors__photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.content .block .authors__devops-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 0;
+}
+.content .block .authors__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content .block .authors__name, .content .block .authors__position {
+  align-self: self-start;
+}
+.content .block .authors__name_name-style, .content .block .authors__position_name-style {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 12px 0 0 10px;
+}
+.content .block .authors__name_devops-name, .content .block .authors__position_devops-name {
+  font-size: 24px;
+  line-height: 29px;
+  margin: 12px 0 0 10px;
+}
+.content .block .authors__name_position-style, .content .block .authors__position_position-style {
+  justify-content: flex-start;
+  margin: 4px 0 0 10px;
+  color: #CDCDCD;
+  font-size: 10px;
+  line-height: 12px;
+}
+.content .block .authors__name_devops-position, .content .block .authors__position_devops-position {
+  justify-content: flex-start;
+  margin: 4px 0 0 10px;
+  color: #CDCDCD;
+  font-size: 20px;
+  line-height: 24px;
+}
+.content .block .date {
+  margin-top: 13px;
+}
+.content .block .date__value, .content .block .date__time {
+  display: flex;
+  justify-content: flex-end;
+}
+.content .block .date__value_value-style, .content .block .date__time_value-style {
+  font-size: 12px;
+  line-height: 14px;
+  margin-right: 50px;
+}
+.content .block .date__value_devops-value, .content .block .date__time_devops-value {
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 100px;
+}
+.content .block .date__value_time-style, .content .block .date__time_time-style {
+  color: #CDCDCD;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 4px 50px 0 10px;
+}
+.content .block .date__value_devops-time, .content .block .date__time_devops-time {
+  color: #CDCDCD;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */
